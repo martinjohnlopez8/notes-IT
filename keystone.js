@@ -13,7 +13,7 @@ keystone.init({
 	'name': 'notesit',
 	'brand': 'notesit',
 
-	'sass': 'public',
+	'css': 'public',
 	'static': 'public',
 	'favicon': 'public/images/favicon.ico',
 	'views': 'templates/views',
