@@ -5910,7 +5910,8 @@ button.close {
 }
 
 .no-margin {
-  margin: 0 auto !important;
+  margin-left: 0 auto !important
+  margin-right: 0 auto !important;
 }
 
 #body {
