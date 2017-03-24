@@ -79,8 +79,7 @@ exports = module.exports = function (req, res) {
 			if (err) {
 				validationErrors = err.errors;
 			} else {
-				req.flash('success', 'Your comment was added.');
-				// return res.redirect('/blog/post/' + locals.post.key + '#comment-id-' + newComment.id);
+				 return res.redirect('/blog/post/' + locals.post.key + '#comment-id-' + newComment.id);
 			}
 			next();
 		});

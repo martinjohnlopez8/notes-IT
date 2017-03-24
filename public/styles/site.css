@@ -10,10 +10,13 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   padding: 0;
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: 100% }
 
 body {
-  margin: 0; }
+  margin: 0; 
+  height: 100%;
+  background-color: #FDF3E7 !important;}
 
 article,
 aside,
@@ -3959,13 +3962,14 @@ tbody.collapse.in {
   .navbar-default .navbar-text {
     color: #777; }
   .navbar-default .navbar-nav > li > a {
-    color: #777; }
+    color: #CCC; }
     .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-      color: #333;
+      color: #fff;
+      font-size: 22px;
       background-color: transparent; }
   .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color: #555;
-    background-color: #e7e7e7; }
+    color: #fff;
+    font-size: 22px; }
   .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
     color: #ccc;
     background-color: transparent; }
@@ -4742,7 +4746,10 @@ button.list-group-item-danger {
   background-color: #f5f5f5;
   border-top: 1px solid #ddd;
   border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px; }
+  border-bottom-left-radius: 3px; 
+
+
+}
 
 .panel > .list-group,
 .panel > .panel-collapse > .list-group {
@@ -5833,6 +5840,7 @@ button.close {
 .header-inside{
   padding: 0px 0px 50px 0px !important;
   font-size: 16px !important;
+  background-color: #C63D0F
 }
 
 .no-padding{
@@ -5879,11 +5887,30 @@ button.close {
   margin-bottom: 50px;
 }
 
+.wrap-all {
+  min-height: 100%;
+  position: relative;
+}
+
 #footer {
-  margin-top: 30px;
-  border-top: 1px solid #eeeeee;
-  padding-top: 30px;
-  color: #777777; }
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  background-color: #7E8F7C;
+}
+
+#footer .footer-content {
+      padding: 20px;
+}
+
+#footer p {
+  text-align: center;
+}
+
+#body {
+  padding-bottom: 200px;
+}
 
 .gallery-image img {
   display: block;
