@@ -17,7 +17,7 @@ block content
 
 				.row.gallery-images
 					if gallery.heroImage.exists
-						.col-sm-12.col-md-12.col-xs-12: img(src=gallery._.heroImage.limit(680,680)).img-rounded.img-center
+						.col-sm-12.col-md-12.col-xs-12: img(src=gallery._.heroImage.limit(680,680)).img-rounded.img-center.img-responsive
 				.row
 					each image, i in gallery.images
 						.col-xs-4.col-sm-3.col-md-2(style="margin-bottom: 30px;")
