@@ -5839,7 +5839,7 @@ button.close {
 }
 
 .header-inside{
-  padding: 0px 0px 50px 0px !important;
+  padding: 0px 0px 40px 0px !important;
   font-size: 16px !important;
   background-color: #C63D0F
 }
@@ -5875,8 +5875,6 @@ button.close {
 @media (max-width: 962px) {
   .margin-navbar {
     margin-right: 0px !important; } }
-
-
 
 .navbar-center{
   text-align: center !important;
@@ -5916,6 +5914,7 @@ button.close {
 
 #body {
   padding-bottom: 200px;
+  padding-top: 200px;
 }
 
 .gallery-image img {

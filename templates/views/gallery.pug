@@ -42,4 +42,12 @@ block page-js
 					buttons: {}
 				}
 			});
+			var selectBody = $('#body');
+
+			$('.navbar-collapse').on('show.bs.collapse', function () {
+			  selectBody.css('padding-top', '500px');
+			})
+			$('.navbar-collapse').on('hide.bs.collapse', function () {
+			  selectBody.css('padding-top', '200px');
+			})
 		});

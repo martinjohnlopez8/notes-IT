@@ -18,7 +18,7 @@ html
 	body
 		.wrap-all
 			#header: .container.header-wrap
-				div(role="navigation").navbar.navbar-default
+				div(role="navigation").navbar.navbar-default.navbar-fixed-top
 					.container-fluid.header-inside
 						.navbar-header.navbar-margin-bottom.no-margin
 							button.navbar-toggle.margin-navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
@@ -68,3 +68,16 @@ html
 		//- Include template-specific javascript files by extending the js block
 		block js
 		block page-js
+			script.
+				jQuery(function($) {
+					var selectBody = $('#body');
+
+					/* 2. */
+					$('.navbar-collapse').on('show.bs.collapse', function () {
+					  selectBody.css('padding-top', '500px');
+					})
+					$('.navbar-collapse').on('hide.bs.collapse', function () {
+					  selectBody.css('padding-top', '200px');
+					})
+				});
+
