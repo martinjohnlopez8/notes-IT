@@ -8,6 +8,7 @@ html
 		meta(http-equiv="X-UA-Compatible" content="IE=edge")
 		title= title || 'Notes-IT'
 		link(rel="shortcut icon", href="/images/favicon.ico", type="image/x-icon")
+		link(href="/styles/normalize.css", rel="stylesheet")
 		link(href="/styles/site.css", rel="stylesheet")
 		if user && user.canAccessKeystone
 			link(href="/keystone/styles/content/editor.min.css", rel="stylesheet")
@@ -19,7 +20,7 @@ html
 			#header: .container.header-wrap
 				div(role="navigation").navbar.navbar-default
 					.container-fluid.header-inside
-						.navbar-header.navbar-margin-bottom
+						.navbar-header.navbar-margin-bottom.no-margin
 							button.navbar-toggle.margin-navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
 								span.sr-only Toggle navigation
 								span.icon-bar
