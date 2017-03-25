@@ -40,6 +40,5 @@ PostComment.schema.post('save', function () {
 	}
 });
 
-PostComment.track = true;
 PostComment.defaultColumns = 'author, post, publishedOn, commentState';
 PostComment.register();
