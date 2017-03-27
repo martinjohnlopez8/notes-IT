@@ -5921,6 +5921,11 @@ button.close {
   padding-top: 200px;
 }
 
+@font-face {
+    font-family: Walkway;
+    src: url('/fonts/Walkway_Semibold.ttf');
+}
+
 .hero {
     background: url(../images/hero.jpg) no-repeat center center;
 /*    min-height: 100%;*/
@@ -5933,6 +5938,11 @@ button.close {
     background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
+}
+
+.hero h1 {
+  font-family: 'Walkway';
+  font-size: 44px;
 }
 
 .hero-overlay{
