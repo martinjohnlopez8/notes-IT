@@ -10,10 +10,12 @@ var keystone = require('keystone');
 // and documentation.
 
 keystone.init({
-	'name': 'notesit',
-	'brand': 'notesit',
+	'name': 'Notes-it',
+	'brand': 'Notes-it',
 
 	'css': 'public',
+	'font': 'public',
+	'fonts': 'public',
 	'static': 'public',
 	'favicon': 'public/images/favicon.ico',
 	'views': 'templates/views',
