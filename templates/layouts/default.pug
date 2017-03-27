@@ -8,7 +8,7 @@ html
 		meta(http-equiv="X-UA-Compatible" content="IE=edge")
 		title= title || 'Notes-IT'
 		link(rel="shortcut icon", href="/images/favicon.ico", type="image/x-icon")
-		link(href='//fonts.googleapis.com/css?family=Sofia' rel='stylesheet')
+		link(href='//fonts.googleapis.com/css?family=Wire One' rel='stylesheet')
 		link(href="/styles/normalize.css", rel="stylesheet")
 		link(href="/styles/site.css", rel="stylesheet")
 		if user && user.canAccessKeystone
@@ -30,7 +30,7 @@ html
 							a.navbar-brand.no-padding(href='/')
 								img.header-logo(src='/images/Notes-It.png')
 						.collapse.navbar-collapse
-							ul.nav.navbar-nav.navbar-right.margin-navbar
+							ul.nav.navbar-nav.navbar-right.margin-navbar.font-35
 								each link in navLinks
 									li.navbar-center(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
 								if user

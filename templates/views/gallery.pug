@@ -12,7 +12,7 @@ block content
 	.container
 		if galleries.length
 			each gallery, i in galleries
-				h3
+				h3.text-center.font-80
 					| #{gallery.name} 
 					small.text-muted= gallery._.publishedDate.format('Do MMM YYYY')
 

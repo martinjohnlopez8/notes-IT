@@ -12,7 +12,7 @@
 }
 
 html {
-  font-family: 'Sofia';
+  font-family: 'Wire One';
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   padding: 0;
@@ -1067,8 +1067,8 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Sofia";
-  font-size: 14px;
+  font-family: "Wire One";
+  font-size: 40px;
   line-height: 1.42857;
   color: #333333;
   background-color: #fff; }
@@ -3971,11 +3971,11 @@ tbody.collapse.in {
     color: #CCC; }
     .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
       color: #fff;
-      font-size: 22px;
+      font-size: 50px;
       background-color: transparent; }
   .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #fff;
-    font-size: 22px; }
+    font-size: 50px; }
   .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
     color: #ccc;
     background-color: transparent; }
@@ -5904,7 +5904,7 @@ button.close {
   width: 100%;
   position: absolute;
   bottom: 0;
-  height: 100px;
+  height: auto;
   background-color: #7E8F7C;
 }
 
@@ -5941,18 +5941,18 @@ button.close {
 }
 
 .hero h1 {
-  font-size: 44px;
+  font-size: 70px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1100px) {
     .hero h1 {
-        font-size: 36px;
+        font-size: 50px;
     }
 }
 
 @media only screen and (max-width: 600px) {
     .hero h1 {
-        font-size: 30px;
+        font-size: 40px;
     }
 }
 
@@ -5985,8 +5985,25 @@ button.close {
 }
 
 .post h2 {
-  font-size: 60px;
+  font-size: 80px;
 }
+
+.font-80 {
+  font-size: 80px !important;
+}
+
+.font-35 {
+  font-size: 35px !important;
+}
+
+.font-20 {
+  font-size: 20px !important;
+}
+
+.font-50 {
+  font-size: 50px !important;
+}
+
 
 .gallery-image img {
   display: block;
