@@ -5,8 +5,14 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+@font-face {
+    font-family: Walkway;
+    src: url('/fonts/Walkway_Semibold.ttf');
+}
+
 html {
-  font-family: sans-serif;
+  font-family: 'Walkway';
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   padding: 0;
@@ -1061,7 +1067,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Walkway";
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
@@ -1076,11 +1082,10 @@ textarea {
   line-height: inherit; }
 
 a {
-  color: #337ab7;
+  color: #000;
   text-decoration: none; }
   a:hover, a:focus {
-    color: #23527c;
-    text-decoration: underline; }
+    color: #000; }
   a:focus {
     outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
@@ -5983,6 +5988,10 @@ button.close {
 
 .no-border-bottom {
   border-bottom: 0;
+}
+
+.post h2 {
+  font-size: 60px;
 }
 
 .gallery-image img {
