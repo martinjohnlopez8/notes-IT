@@ -23,8 +23,11 @@ mixin post(post)
 		if post.content.extended
 			p.read-more.text-center: a(href='/blog/post/' + post.slug) Read more...
 
+block css 
+	link(href="/styles/blog.css", rel="stylesheet")
+
 block intro
-	.container
+	.title-bar
 		h1= data.category ? data.category.name : 'Blog'
 
 block content
