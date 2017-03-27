@@ -7,8 +7,8 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
 @font-face {
-    font-family: Walkway;
-    src: url('/styles/Walkway_Semibold.ttf');
+    font-family: 'Walkway';
+    src: url('/fonts/Walkway_Semibold.ttf');
 }
 
 html {
@@ -5924,11 +5924,6 @@ button.close {
 #body {
   padding-bottom: 200px;
   padding-top: 200px;
-}
-
-@font-face {
-    font-family: Walkway;
-    src: url('/fonts/Walkway_Semibold.ttf');
 }
 
 .hero {
