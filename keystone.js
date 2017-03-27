@@ -13,9 +13,8 @@ keystone.init({
 	'name': 'Notes-it',
 	'brand': 'Notes-it',
 
+	'scss': 'public',
 	'css': 'public',
-	'font': 'public/fonts',
-	'fonts': 'public/fonts',
 	'static': 'public',
 	'favicon': 'public/images/favicon.ico',
 	'views': 'templates/views',
