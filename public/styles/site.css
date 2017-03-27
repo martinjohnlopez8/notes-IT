@@ -12,7 +12,7 @@
 }
 
 html {
-  font-family: 'Walkway';
+  font-family: 'Sofia';
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   padding: 0;
@@ -1067,7 +1067,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Walkway";
+  font-family: "Sofia";
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
@@ -5941,7 +5941,6 @@ button.close {
 }
 
 .hero h1 {
-  font-family: 'Walkway';
   font-size: 44px;
 }
 
