@@ -1,6 +1,6 @@
 @font-face {
     font-family: Walkway;
-    src: url(../fonts/walkway/Walkway_Semibold.ttf);
+    src: url('/fonts/walkway/Walkway_Semibold.ttf');
 }
 
 #body {
