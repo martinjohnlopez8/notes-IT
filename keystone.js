@@ -21,6 +21,7 @@ keystone.init({
 
 	'auto update': true,
 	'mongo': 'mongodb://admin:password@ds137090.mlab.com:37090/notes-it',
+	// 'mongo': 'localhost/27017',
 	'session': true,
 	'auth': true,
 	'user model': 'User',

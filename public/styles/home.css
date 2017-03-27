@@ -1,0 +1,23 @@
+@font-face {
+    font-family: Walkway;
+    src: url(../fonts/walkway/Walkway_Semibold.ttf);
+}
+
+#body {
+	padding: 0 !important;
+}
+
+h1 {
+	font-family: 'Walkway';
+	font-size: 44px;
+}
+
+hr {
+	border-color: #FFE300;
+    width: 12%;
+    border-width: 2px;
+    position: relative;
+    z-index: 100;
+    margin-top: 50px;
+}
+
