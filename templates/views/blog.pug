@@ -2,8 +2,10 @@ extends ../layouts/default
 
 mixin post(post)
 	.post(data-ks-editable=editable(user, { list: 'Post', id: post.id }))
-		h2: a(href='/blog/post/' + post.slug)= post.title
-		p.lead.text-muted Posted 
+		if post.image.exists
+			img(src=post._.image.fit(1500,1500)).img-responsive
+		h2.text-center: a(href='/blog/post/' + post.slug)= post.title
+		p.lead.text-muted.text-center Posted 
 			if post.publishedDate
 				| on #{post._.publishedDate.format('MMMM Do, YYYY')} 
 			if post.categories && post.categories.length
@@ -16,11 +18,10 @@ mixin post(post)
 						|  
 			if post.author
 				| by #{post.author.name.first}
-		if post.image.exists
-			img(src=post._.image.fit(160,160)).img.pull-right
-		p!= post.content.brief
+		.text-center
+			p!= post.content.brief
 		if post.content.extended
-			p.read-more: a(href='/blog/post/' + post.slug) Read more...
+			p.read-more.text-center: a(href='/blog/post/' + post.slug) Read more...
 
 block intro
 	.container
@@ -28,21 +29,11 @@ block intro
 
 block content
 	.container: .row
-		.col-sm-8.col-md-9
+		.col-sm-8.col-md-12
 			if filters.category && !data.category
 				h3.text-muted Invalid Category.
 			else
 				if data.posts.results.length
-					if data.posts.totalPages > 1
-						h4.text-weight-normal Showing 
-							strong #{data.posts.first}
-							|  to 
-							strong #{data.posts.last}
-							|  of 
-							strong #{data.posts.total}
-							|  posts.
-					else
-						h4.text-weight-normal Showing #{utils.plural(data.posts.results.length, '* post')}.
 					.blog
 						each post in data.posts.results
 							+post(post)
@@ -67,8 +58,8 @@ block content
 						h3.text-muted There are no posts yet.
 		
 		if data.categories.length
-			.col-sm-4.col-md-3
-				h2 Categories
+			.col-sm-4.col-md-12
+				h2.text-center Categories
 				.list-group(style='margin-top: 70px;')
 					a(href='/blog', class=!data.category ? 'active' : false).list-group-item All Categories
 					each cat in data.categories
