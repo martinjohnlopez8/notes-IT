@@ -7,10 +7,11 @@
 	padding: 0 !important;
 }
 
-/*h1 {
-	font-family: 'Walkway';
-	font-size: 44px;
-}*/
+@media (min-width: 900px) {
+    h1 {
+    	font-size: 36px;
+    }
+}
 
 hr {
 	border-color: #FFE300;

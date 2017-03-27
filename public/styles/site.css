@@ -5945,6 +5945,18 @@ button.close {
   font-size: 44px;
 }
 
+@media only screen and (max-width: 900px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+
 .hero-overlay{
       position: absolute;
       top: 0;
