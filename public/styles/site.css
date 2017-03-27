@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: Walkway;
-    src: url('../fonts/Walkway_Semibold.ttf');
+    src: url('/styles/Walkway_Semibold.ttf');
 }
 
 html {
