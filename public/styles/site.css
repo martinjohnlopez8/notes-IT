@@ -6004,6 +6004,17 @@ button.close {
   font-size: 50px !important;
 }
 
+.font-25 {
+  font-size: 25px !important;
+}
+
+.blog .read-more a{
+  color: #66c8cf !important;
+}
+
+.margin-25 {
+  margin-top: -15px;
+}
 
 .gallery-image img {
   display: block;

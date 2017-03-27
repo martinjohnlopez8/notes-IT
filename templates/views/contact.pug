@@ -18,22 +18,22 @@ block content
 						input(type='hidden', name='action', value='contact')
 						.form-group(class=validationErrors.name ? 'has-error' : null)
 							label Name
-							input(type='text', name='name.full', value=formData['name.full']).form-control
+							input(type='text', name='name.full', value=formData['name.full'] required).form-control.font-25
 						.form-group(class=validationErrors.email ? 'has-error' : null)
 							label Email
-							input(type='email', name='email', value=formData.email).form-control
+							input(type='email', name='email', value=formData.email required).form-control.font-25
 						.form-group
 							label Phone
-							input(type='text', name='phone', value=formData.phone, placeholder='(optional)').form-control
+							input(type='text', name='phone', value=formData.phone, placeholder='(optional)').form-control.font-25
 				.col-sm-12.col-md-6
 						.form-group(class=validationErrors.enquiryType ? 'has-error' : null)
 							label What are you contacting us about?
-							select(name='enquiryType').form-control
+							select(name='enquiryType').form-control.font-25
 								option(value='') (select one)
 								each type in enquiryTypes
 									option(value=type.value, selected=formData.enquiryType == type.value)= type.label
 						.form-group(class=validationErrors.message ? 'has-error' : null)
 							label Message
-							textarea(name='message', placeholder='Leave us a message...' rows=6).form-control= formData.message
+							textarea(name='message', placeholder='Leave us a message...' rows=6).form-control.font-25= formData.message
 						.form-actions
-							button(type='submit').btn.btn-primary Send
+							button(type='submit').btn.btn-primary.font-25 Send

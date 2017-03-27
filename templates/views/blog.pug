@@ -5,7 +5,7 @@ mixin post(post)
 		if post.image.exists
 			img(src=post._.image.fit(1500,1500)).img-responsive
 		h2.text-center: a(href='/blog/post/' + post.slug)= post.title
-		p.lead.text-muted.text-center.font-35 Posted 
+		p.lead.text-muted.text-center.font-35.margin-25 Posted 
 			if post.publishedDate
 				| on #{post._.publishedDate.format('MMMM Do, YYYY')} 
 			if post.categories && post.categories.length
@@ -32,7 +32,7 @@ block intro
 
 block content
 	.container: .row
-		.col-sm-8.col-md-12
+		.col-md-12
 			if filters.category && !data.category
 				h3.text-muted Invalid Category.
 			else
@@ -61,7 +61,7 @@ block content
 						h3.text-muted There are no posts yet.
 		
 		if data.categories.length
-			.col-sm-4.col-md-12
+			.col-md-12
 				h2.text-center.font-50 Categories
 				.list-group.font-20(style='margin-top: 70px;')
 					a(href='/blog', class=!data.category ? 'active' : false).list-group-item All Categories
