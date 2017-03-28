@@ -5956,6 +5956,10 @@ button.close {
     }
 }
 
+.margin-bottom-100 {
+  margin-bottom: 100px;
+}
+
 .hero-overlay{
       position: absolute;
       top: 0;

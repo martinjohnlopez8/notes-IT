@@ -1,7 +1,7 @@
 extends ../layouts/default
 
 mixin post(post)
-	.post(data-ks-editable=editable(user, { list: 'Post', id: post.id }))
+	.post.margin-bottom-100(data-ks-editable=editable(user, { list: 'Post', id: post.id }))
 		if post.image.exists
 			img(src=post._.image.fit(1500,1500)).img-responsive
 		h2.text-center: a(href='/blog/post/' + post.slug)= post.title
@@ -17,7 +17,7 @@ mixin post(post)
 					else
 						|  
 			if post.author
-				| by #{post.author.name.first}
+				| by - #{post.author.name.first}
 		.text-center
 			p!= post.content.brief
 		if post.content.extended

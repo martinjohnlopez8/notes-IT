@@ -12,3 +12,6 @@ hr {
     margin-top: 50px;
 }
 
+.margin-top-date {
+	margin-top: -50px !important;
+}
