@@ -31,14 +31,19 @@ html
 								img.header-logo(src='/images/Notes-It.png')
 						.collapse.navbar-collapse
 							ul.nav.navbar-nav.navbar-right.margin-navbar.font-35
-								each link in navLinks
-									li.navbar-center(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
+								if !user
+									li.navbar-center: a(href='/registration') Register
+									li.navbar-center: a(href='/signin') Sign in
 								if user
 									if user.canAccessKeystone
+										each link in navLinks
+											li.navbar-center(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
 										li.navbar-center: a(href='/keystone') Dashboard
-									li.navbar-center: a(href='/keystone/signout') Sign Out
-								else
-									li.navbar-center: a(href='/keystone/signin') Sign In
+										li.navbar-center: a(href='/keystone/signout') Sign Out
+									else
+										each link in navLinks
+											li.navbar-center(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
+										li.navbar-center: a(href='/keystone/signout') Sign Out
 			#body
 				block intro
 				+flash-messages(messages)
