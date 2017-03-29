@@ -43,7 +43,7 @@ html
 									else
 										each link in navLinks
 											li.navbar-center(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
-										li.navbar-center: a(href='/keystone/signout') Sign Out
+										li.navbar-center: a(href='/signout') Sign Out
 			#body
 				block intro
 				+flash-messages(messages)

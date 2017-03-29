@@ -1,0 +1,19 @@
+extends ../layouts/default
+
+block content
+			form(method='post', action='/signin', role='signin', novalidate).auth-form
+				input(type='hidden', name='action', value='signin')
+				.form-groups
+					.form-group
+						label(for='signin-email').sr-only Email
+						input(type='email', name='email', placeholder='Email', id='signin-email', value=locals.form ? locals.form.email : null).form-control.form-control--first
+					.form-group
+						label(for='signin-password').sr-only Password
+						input(type='password', name='password', placeholder='Password', id='signin-password', value='').form-control.form-control--last
+				button(type='submit').btn.btn-block.btn-primary.btn-submit Sign in
+
+block js
+	script.
+		jQuery(function($) {
+			$('.auth-form').find('.form-control').eq(0).focus().select();
+		});

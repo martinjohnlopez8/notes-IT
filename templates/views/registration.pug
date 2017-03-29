@@ -12,25 +12,23 @@ block content
 
 			form.contact-form(method="post").row.col-sm-8.col-md-6
 				input(type='hidden', name='action', value='user.create')
-
 				.form-group
-					label Name
-
+					label Name *
 					.row
 						.col-sm-6.col-md-6
-							input.form-control.input-box(type='text', name='first', value=formData.first, placeholder='First Name')
+							input.form-control.input-box(type='text', name='firstname', value=formData.first, placeholder='First Name' required)
 						.col-sm-6.col-md-6
-							input.form-control.input-box(type='text', name='last', value=formData.last, placeholder='Last Name')
+							input.form-control.input-box(type='text', name='lastname', value=formData.last, placeholder='Last Name' required)
 				.form-group
-						label Email
-						input.form-control.input-box(type='email', name='email', value=formData.email, placeholder='Email')
+						label Email *
+						input.form-control.input-box(type='email', name='email', value=formData.email, placeholder='Email' required)
 				.form-group
-						label Password
+						label Password *
 						.row
 							.col-sm-6.col-md-6
-								input.form-control.input-box(type='password', name='password', value=formData.password, placeholder='Password')
+								input.form-control.input-box(type='password', name='password', value=formData.password, placeholder='Password' required)
 							.col-sm-6.col-md-6
-								input.form-control.input-box(type='password', name='password_confirm', value=formData.password_confirm, placeholder='Retype password')
+								input.form-control.input-box(type='password', name='password_confirm', value=formData.password_confirm, placeholder='Retype password' required)
 				button(type='submit').btn.btn-success Sign up	
 //- block content
 //- 	.container
