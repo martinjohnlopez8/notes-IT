@@ -97,6 +97,7 @@ exports = module.exports = function (req, res) {
 			}
 			
 			keystone.session.signin({ email: req.body.email, password: req.body.password }, req, res, onSuccess, onFail);
+			res.redirect('/signin')
 			
 		});
 		

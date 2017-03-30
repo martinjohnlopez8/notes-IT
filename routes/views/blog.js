@@ -69,7 +69,7 @@ exports = module.exports = function (req, res) {
 	view.on('init', function (next) {
 		var q = keystone.list('Post').paginate({
 			page: req.query.page || 1,
-			perPage: 10,
+			perPage: 5,
 			maxPages: 10,
 		})
 			.find().where('author', locals.user.id)
@@ -86,16 +86,6 @@ exports = module.exports = function (req, res) {
 			next(err);
 		});
 	});
-
-	// view.on('init', function (next) {
-	// 	Post.model.find().where('author', author.id).exec(function(err, posts) {
-	// 	    locals.data.posts = posts;
-	// 	});
-	// });
-
-	// Post.model.find().where('author', author.id).exec(function(err, posts) {
-	//     locals.data.posts = posts;
-	// });
 
 
 	// Render the view

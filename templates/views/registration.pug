@@ -1,35 +1,37 @@
 extends ../layouts/default
 
+block css
+	link(href="/styles/blog.css", rel="stylesheet")
+
 block intro
-	.container
-		h1= 'Sign up for Notes-IT'	
+	.title-bar
+		h1.text-center Sign up for Notes-IT	
 block content
 	.container
-		if user
-			p You are already logged in.
-		else
-			p Fill form in order to sign up.
-
-			form.contact-form(method="post").row.col-sm-8.col-md-6
-				input(type='hidden', name='action', value='user.create')
-				.form-group
-					label Name *
-					.row
-						.col-sm-6.col-md-6
-							input.form-control.input-box(type='text', name='firstname', value=formData.first, placeholder='First Name' required)
-						.col-sm-6.col-md-6
-							input.form-control.input-box(type='text', name='lastname', value=formData.last, placeholder='Last Name' required)
-				.form-group
-						label Email *
-						input.form-control.input-box(type='email', name='email', value=formData.email, placeholder='Email' required)
-				.form-group
-						label Password *
+		.registration
+			if user
+				p You are already logged in.
+			else
+				form.contact-form(method="post").col-md-12
+					input(type='hidden', name='action', value='user.create')
+					.form-group.col-md-12
+						label.text-center Name *
 						.row
-							.col-sm-6.col-md-6
-								input.form-control.input-box(type='password', name='password', value=formData.password, placeholder='Password' required)
-							.col-sm-6.col-md-6
-								input.form-control.input-box(type='password', name='password_confirm', value=formData.password_confirm, placeholder='Retype password' required)
-				button(type='submit').btn.btn-success Sign up	
+							.col-sm-12.col-md-6
+								input.form-control.input-box(type='text', name='firstname', value=formData.first, placeholder='First Name' required)
+							.col-sm-12.col-md-6
+								input.form-control.input-box(type='text', name='lastname', value=formData.last, placeholder='Last Name' required)
+					.form-group.col-md-12
+							label.text-center Email *
+							input.form-control.input-box(type='email', name='email', value=formData.email, placeholder='Email' required)
+					.form-group.col-md-12
+							label.text-center Password *
+							.row
+								.col-md-6
+									input.form-control.input-box(type='password', name='password', value=formData.password, placeholder='Password' required)
+								.col-md-6
+									input.form-control.input-box(type='password', name='password_confirm', value=formData.password_confirm, placeholder='Retype password' required)
+					button(type='submit').btn.btn-success Sign up	
 //- block content
 //- 	.container
 //- 		if user

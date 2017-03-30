@@ -1,0 +1,30 @@
+extends ../layouts/default
+
+block css
+	link(href="/styles/blog.css", rel="stylesheet")
+
+block intro
+	.title-bar
+		h1.text-center Edit Notes
+block content
+	.container
+		.notesedit
+			form.contact-form(method="post").col-md-12
+				input(type='hidden', name='action', value='notes.edit')
+				.form-group.col-md-12
+				.form-group.col-md-12
+						label.text-center Title
+						input.form-control.input-box(type='text', name='title', value=data.post.title, placeholder='Title' required)
+				.form-group.col-md-12
+						label.text-center Content *
+						.row
+							.col-md-12
+								textarea(type='text', name='briefcontent', placeholder='Write the summary of your notes', rows=20) 
+									!=data.post.content.brief
+							.col-md-12
+								textarea(name='extendedcontent', value=formData.extendedcontent, placeholder='Write your full notes', rows=20)
+									!=data.post.content.extended
+				button(type='submit').btn.btn-success Edit Notes
+			form.contact-form(method="post").col-md-12
+				input(type='hidden', name='action', value='notes.delete')
+				button(type='submit').btn.btn-success Delete Notes

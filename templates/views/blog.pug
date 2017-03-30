@@ -28,7 +28,7 @@ block css
 
 block intro
 	.title-bar
-		h1= data.category ? data.category.name : 'Blog'
+		h1= data.category ? data.category.name : 'Notes'
 
 block content
 	.container: .row
@@ -67,3 +67,4 @@ block content
 					a(href='/blog', class=!data.category ? 'active' : false).list-group-item All Categories
 					each cat in data.categories
 						a(href='/blog/' + cat.key, class=data.category && data.category.id == cat.id ? 'active' : false).list-group-item= cat.name
+	p.addnotes: a(href= '/addnotes') Add Notes

@@ -32,6 +32,7 @@ block content
 				.post
 					.text-center.font-35
 						!= data.post.content.full
+				p.text-center.editnotes: a(href='/editnotes/' + data.post.slug) Edit Note
 				p: a(href='/blog') &larr; back to the blog
 
 block page-js

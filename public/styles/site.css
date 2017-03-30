@@ -6020,6 +6020,98 @@ button.close {
   margin-top: -15px;
 }
 
+.signin .field{
+  margin: 0 auto;
+  width: 300px;
+  height: 50px;
+  font-size: 30px;
+}
+
+.signin button{
+  margin: 0 auto;
+  width: 300px;
+  height: 50px;
+  font-size: 30px;
+}
+
+.registration input {
+  width: 300px;
+  height: 50px;
+  font-size: 30px;
+  margin: 0 auto;
+}
+
+.registration label {
+  display: block;
+}
+
+.registration button {
+  margin: 0 auto;
+  width: 300px;
+  height: 50px;
+  font-size: 30px;
+  display: block;
+}
+
+.addnotes a{
+  padding: 10px;
+  background-color: #C63D0F;
+  color: white;
+  position: fixed;
+  bottom: 100px;
+}
+
+.editnotes a{
+  padding: 10px;
+  background-color: #C63D0F;
+  color: white;
+  position: fixed;
+  bottom: 100px;
+  left: 0px;
+}
+
+.notesedit {
+  font-family: 'Helvetica Neue';
+  font-size: 20px;
+}
+
+.notesedit .title{
+  width: 300px;
+}
+
+.notesedit textarea{
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #555555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+.notesadd {
+  font-family: 'Helvetica Neue';
+  font-size: 20px;
+}
+
+.notesadd .title{
+  width: 300px;
+}
+
+.notesadd textarea{
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #555555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
 .gallery-image img {
   display: block;
   max-width: 100%;

@@ -43,6 +43,9 @@ exports = module.exports = function (app) {
 	app.all('/signin', routes.views.signin);
 	app.all('/signout', routes.views.signout);
 	app.all('/contact', routes.views.contact);
+	app.all('/addnotes', routes.views.addnotes);
+	app.all('/editnotes/:post', routes.views.editnotes);
+	app.all('/editnotes', routes.views.editnotes);
 
 	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:
 	// app.get('/protected', middleware.requireUser, routes.views.protected);
