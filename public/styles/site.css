@@ -6133,7 +6133,9 @@ button.close {
   margin: 0 auto;
 }
 
-.aas
+.margin-center{
+  margin: 0 auto;
+}
 
 .gallery-image img {
   display: block;
