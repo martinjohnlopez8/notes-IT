@@ -87,7 +87,7 @@ exports = module.exports = function (req, res) {
 					console.log('[join] - Set target as [' + req.body.target + '].');
 					res.redirect(req.body.target);
 				} else {
-					res.redirect('/');
+					return res.redirect('/');
 				}
 			}
 			
@@ -97,7 +97,6 @@ exports = module.exports = function (req, res) {
 			}
 			
 			keystone.session.signin({ email: req.body.email, password: req.body.password }, req, res, onSuccess, onFail);
-			res.redirect('/signin')
 			
 		});
 		
