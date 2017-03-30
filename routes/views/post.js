@@ -15,9 +15,18 @@ exports = module.exports = function (req, res) {
 		posts: [],
 	};
 
+	console.log(res.locals)
+
+
+	if (locals.user) {
+		console.log('User is signed in')
+	}
+	else{
+		res.redirect('/signin')
+	}
+
 	// Load the current post
 	view.on('init', function (next) {
-
 		var q = keystone.list('Post').model.findOne({
 			state: 'published',
 			slug: locals.filters.post,
@@ -27,7 +36,6 @@ exports = module.exports = function (req, res) {
 			locals.data.post = result;
 			next(err);
 		});
-
 	});
 
 	// Load other posts

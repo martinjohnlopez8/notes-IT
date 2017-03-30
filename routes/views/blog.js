@@ -18,6 +18,8 @@ exports = module.exports = function (req, res) {
 		categories: [],
 	};
 
+	console.log(res.locals)
+
 	// Load all categories
 	view.on('init', function (next) {
 
