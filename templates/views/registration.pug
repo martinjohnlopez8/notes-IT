@@ -8,7 +8,7 @@ block intro
 		h1.text-center Sign up for Notes-IT	
 block content
 	.container
-		.registration
+		.notesadd
 			if user
 				p You are already logged in.
 			else
@@ -17,20 +17,20 @@ block content
 					.form-group.col-md-12
 						label.text-center Name *
 						.row
-							.col-sm-12.col-md-6
-								input.form-control.input-box(type='text', name='firstname', value=formData.first, placeholder='First Name' required)
-							.col-sm-12.col-md-6
-								input.form-control.input-box(type='text', name='lastname', value=formData.last, placeholder='Last Name' required)
+							.col-sm-12
+								input.name.form-control.input-box(type='text', name='firstname', value=formData.first, placeholder='First Name' required)
+							.col-sm-12
+								input.name.form-control.input-box(type='text', name='lastname', value=formData.last, placeholder='Last Name' required)
 					.form-group.col-md-12
 							label.text-center Email *
-							input.form-control.input-box(type='email', name='email', value=formData.email, placeholder='Email' required)
+							input.form-control.input-box.email(type='email', name='email', value=formData.email, placeholder='Email' required)
 					.form-group.col-md-12
 							label.text-center Password *
 							.row
-								.col-md-6
-									input.form-control.input-box(type='password', name='password', value=formData.password, placeholder='Password' required)
-								.col-md-6
-									input.form-control.input-box(type='password', name='password_confirm', value=formData.password_confirm, placeholder='Retype password' required)
+								.col-sm-12
+									input.name.form-control.input-box(type='password', name='password', value=formData.password, placeholder='Password' required)
+								.col-sm-12
+									input.name.form-control.input-box(type='password', name='password_confirm', value=formData.password_confirm, placeholder='Retype password' required)
 					button(type='submit').btn.btn-success Sign up	
 //- block content
 //- 	.container

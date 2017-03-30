@@ -6112,6 +6112,27 @@ button.close {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
+.notesadd .email {
+  width:500px;
+  margin: 0 auto;
+}
+
+.notesadd .name {
+  width:300px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.notesadd label {
+  display: block;
+}
+
+.notesadd button {
+  display: block;
+  margin: 0 auto;
+}
+
 .gallery-image img {
   display: block;
   max-width: 100%;
